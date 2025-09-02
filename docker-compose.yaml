@@ -8,7 +8,7 @@ networks:
 services:
   server:
     image: nicolargo/glances:4.3.2-full
-    command: glances -w
+    entrypoint: ["glances", "-w"]
     deploy:
       mode: replicated
       replicas: 1
