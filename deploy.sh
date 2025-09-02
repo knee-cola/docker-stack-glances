@@ -1,4 +1,4 @@
 #!/bin/bash
 docker stack deploy \
-    -c docker-compose-deploy.yml \
+    -c docker-compose.yaml \
     glances
